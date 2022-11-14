@@ -5,15 +5,17 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class ProductTypeEntity {
-    private String id;
+    private long id;
     private String name;
     private String creationUser;
-    private String creationDate;
+    private Date creationDate;
     private String modificationUser;
-    private String modificationDate;
+    private Date modificationDate;
 }
 
